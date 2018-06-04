@@ -148,9 +148,7 @@ function loadLiquidFillGauge(elementId, value, config) {
         .attr("cy", radius)
         .attr("r", fillCircleRadius - 20)
         .style("fill", config.waveColor);
-	
-	console.log(fillCircleRadius);
-	
+		
     // Text where the wave does overlap.
     var text2 = fillCircleGroup.append("text")
         .text(textRounder(textStartValue) + percentText)

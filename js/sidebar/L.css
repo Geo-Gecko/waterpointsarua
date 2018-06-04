@@ -33,7 +33,8 @@
       background-clip: padding-box; }
   @media (max-width: 767px) {
 	  #righthelpbutton {
-		  left: -4em !important;
+		  left: 7em !important;
+		  height: 320px !important;
 	  }
     .leaflet-sidebar {
       width: 100%;
