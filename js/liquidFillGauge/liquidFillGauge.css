@@ -1,6 +1,5 @@
 #fillgauge1{
-   border-radius: 10px;
-    position: absolute;
+	border-radius: 100px;
     display: none;
     width: 360px;
     height: auto;
@@ -14,6 +13,12 @@
     padding: 16px;
     opacity: 1;
     z-index:10000002;
+}
+#gauge{
+	background-position: right bottom !important;
+}
+.liquidFillGaugeText{
+	display: none;
 }
 #overlay{
     position: absolute;

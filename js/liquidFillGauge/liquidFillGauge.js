@@ -115,7 +115,7 @@ function loadLiquidFillGauge(elementId, value, config) {
         .innerRadius(gaugeCircleY(radius-circleThickness));
     gaugeGroup.append("path")
         .attr("d", gaugeCircleArc)
-        .style("fill", config.circleColor)
+        .style("fill", "rgba(0,0,0,0)")
         .attr('transform','translate('+radius+','+radius+')');
 
     // Text where the wave does not overlap.
