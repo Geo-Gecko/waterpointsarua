@@ -50,8 +50,6 @@
 	</head>
 
 	<body>
-		<div id='hot' style="z-index: 10000; position: fixed; bottom: 2%; right: 1%; border: 0; text-align: center; width: 15em;"><br>Data Collected by<br>
-			<br><br><br></div>
 		<div id="map"></div>
 		<rightbutton id="righthelpbutton" role="button" class="btn btn-primary">W<br>A<br>T<br>E<br>R<br><br>P<br>O<br>I<br>N<br>T<br>S<br><br>A<br>R<br>U<br>A<br><span class="glyphicon glyphicon-chevron-right"></span></rightbutton>
 		<div id="sidebar-right"></div>
@@ -405,7 +403,8 @@
 				var otherEnd = other.select(function() {
 					return this.parentNode;
 				});
-				otherEnd.append('img').attr("src", "data/hot-attribution.png");
+				otherEnd.append('div').append('img').attr("src", "data/hot-attribution.png")
+				.attr("width", "20em");
 
 				map.setView([2.955, 31.122], 10);
 
