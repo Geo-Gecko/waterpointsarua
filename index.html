@@ -403,8 +403,9 @@
 				var otherEnd = other.select(function() {
 					return this.parentNode;
 				});
-				otherEnd.append('div').append('img').attr("src", "data/hot-attribution.png")
-				.attr("width", "20em");
+				var imageDiv = otherEnd.append('div');
+				imageDiv.append('img').attr("src", "data/hot-attribution.png")
+				.attr("width", "200em");
 
 				map.setView([2.955, 31.122], 10);
 
