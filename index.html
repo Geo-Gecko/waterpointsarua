@@ -50,13 +50,11 @@
 	</head>
 
 	<body>
-		<div id="gauge">
-		<svg id="fillgauge1" width="40px"></svg>
-		</div>
+		<div id='hot' style="z-index: 10000; position: fixed; bottom: 2%; right: 0; border: 0; text-align: center; width: 15em;"><br>Data Collected by<br>
+<br>		<a href="https://www.hotosm.org/"><img src="data/hot-logo.svg" alt="HOT-OSM"></a><br><br></div>
 		<div id="map"></div>
 		<rightbutton id="righthelpbutton" role="button" class="btn btn-primary">W<br>A<br>T<br>E<br>R<br><br>P<br>O<br>I<br>N<br>T<br>S<br><br>A<br>R<br>U<br>A<br><span class="glyphicon glyphicon-chevron-right"></span></rightbutton>
 		<div id="sidebar-right"></div>
-
 		<script>
 			$.fn.center = function () {
 				this.css("position","absolute");
@@ -66,39 +64,6 @@
 						);
 				return this;
 			}
-
-			$("#fillgauge1").show().center();
-			function getRandomIntInclusive(min, max) {
-				min = Math.ceil(min);
-				max = Math.floor(max);
-				return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
-			}
-			var gauge1 = loadLiquidFillGauge("fillgauge1", getRandomIntInclusive(40, 50));
-
-			setTimeout(function () {
-				gauge1.update(getRandomIntInclusive(30, 40));
-			}, 1000);
-
-			setTimeout(function () {
-				gauge1.update(getRandomIntInclusive(50, 70));
-			}, 2500);
-
-			setInterval(function () {
-				gauge1.update(getRandomIntInclusive(30, 50));
-			}, 5000);
-
-			setInterval(function () {
-				gauge1.update(getRandomIntInclusive(0, 50));
-			}, 7000);
-
-			var config1 = liquidFillGaugeDefaultSettings();
-			//config1.circleColor = "#FF7777";
-			config1.textColor = "#FF4444";
-			config1.waveTextColor = "#FFAAAA";
-			config1.waveColor = "#FFDDDD";
-			config1.circleThickness = 0.2;
-			config1.textVertPosition = 0.2;
-			config1.waveAnimateTime = 2000;
 
 			var storkmap = {};
 
@@ -114,7 +79,7 @@
 
 				var link = '<a href="http://www.openstreetmap.org/edit?editor=id&node=' + node.id +
 					'">Edit this entry in iD</a><br>';
-				//var user = '<b>Added by: </b>' + '<a href="http://www.openstreetmap.org/user/' + node.user + '">' + node.user + '</a><br>';
+				var user = '<b>Added by: </b>' + '<a href="http://www.openstreetmap.org/user/' + node.user + '">' + node.user + '</a><br>';
 				var timestamp = '<b>Timestamp: </b>' + node.timestamp;
 
 				var r = $('<table>');
@@ -129,7 +94,7 @@
 				if (node.tags.image == null) img = '';
 
 
-				return link + '<br>' + /*user + timestamp + '<br>' + '<br>' +*/ '<b>Tags:</b>' + '<br>' + tags + '<br>' +
+				return link + '<br>' + user + timestamp + '<br>' + '<br>' + '<b>Tags:</b>' + '<br>' + tags + '<br>' +
 					img;
 			};
 
@@ -415,7 +380,7 @@
 							},
 							title: 'remove markers'
 						}]
-					}),					
+					})
 				}
 
 				// add the buttons. iterates over the buttons objects
@@ -435,6 +400,7 @@
 						setParent(htmlObject, a);
 					}
 				}
+				
 				map.setView([2.955, 31.122], 10);
 
 				var rightSidebar = L.control.sidebar('sidebar-right', {
