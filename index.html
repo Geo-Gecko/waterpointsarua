@@ -77,7 +77,7 @@
 
 				var link = '<a href="http://www.openstreetmap.org/edit?editor=id&node=' + node.id +
 					'">Edit this entry in iD</a><br>';
-				var user = '<b>Added by: </b>' + '<a href="http://www.openstreetmap.org/user/' + node.user + '">' + node.user + '</a><br>';
+				//var user = '<b>Added by: </b>' + '<a href="http://www.openstreetmap.org/user/' + node.user + '">' + node.user + '</a><br>';
 				var timestamp = '<b>Timestamp: </b>' + node.timestamp;
 
 				var r = $('<table>');
@@ -92,7 +92,7 @@
 				if (node.tags.image == null) img = '';
 
 
-				return link + '<br>' + user + timestamp + '<br>' + '<br>' + '<b>Tags:</b>' + '<br>' + tags + '<br>' +
+				return link + '<br>' /*+ user + timestamp + '<br>' + '<br>' */+ '<b>Tags:</b>' + '<br>' + tags + '<br>' +
 					img;
 			};
 
