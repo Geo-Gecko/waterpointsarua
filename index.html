@@ -403,7 +403,8 @@
 				var otherEnd = other.select(function() {
 					return this.parentNode;
 				});
-				var imageDiv = otherEnd.append('div');
+				var imageDiv = otherEnd.append('div')
+				.attr("padding-top", "2px");
 				imageDiv.append('img').attr("src", "data/hot-attribution.png")
 				.attr("align", "center")
 				.attr("width", "200em");
