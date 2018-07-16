@@ -51,7 +51,6 @@
 
 	<body>
 		<div id="map"></div>
-		<rightbutton id="righthelpbutton" role="button" class="btn btn-primary">W<br>A<br>T<br>E<br>R<br><br>P<br>O<br>I<br>N<br>T<br>S<br><br>A<br>R<br>U<br>A<br><span class="glyphicon glyphicon-chevron-right"></span></rightbutton>
 		<div id="sidebar-right"></div>
 		<script>
 			$.fn.center = function () {
@@ -241,7 +240,7 @@
 					Borehole: L.easyButton({
 						position: 'topright',
 						states: [{
-							icon: '<img alt="do this" src="data/stork.svg" height="40" width="25" align="left"/><span id="text" class="btn--text"><font color="black"><b>Borehole</b></font></span>',
+							icon: '<img alt="do this" src="data/stork.svg" height="30" width="15" align="left"/><span id="text" class="btn--text"><font color="black"><b>Borehole</b></font></span>',
 							stateName: 'remove-markers',
 							onClick: function(control) {
 								map.removeLayer(storkmap.markerClusterGroup);
@@ -251,7 +250,7 @@
 						},
 								 {
 									 stateName: 'add-markers',
-									 icon: '<img alt="do this" src="data/stork.svg" height="40" width="25" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Borehole</b></font></span>',
+									 icon: '<img alt="do this" src="data/stork.svg" height="30" width="15" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Borehole</b></font></span>',
 									 title: 'add random markers',
 									 onClick: function(control) {
 										 map.addLayer(storkmap.markerClusterGroup);
@@ -263,14 +262,14 @@
 						position: 'topright',
 						states: [{
 							stateName: 'add-markers',
-							icon: '<img alt="do this" src="data/stork1.svg" height="40" width="25" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Water Tap</b></font></span>',
+							icon: '<img alt="do this" src="data/stork1.svg" height="30" width="15" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Water Tap</b></font></span>',
 							title: 'add random markers',
 							onClick: function(control) {
 								map.addLayer(storkmap.markerClusterGroup1);
 								control.state('remove-markers');
 							}
 						}, {
-							icon: '<img alt="do this" src="data/stork1.svg" height="40" width="25" align="left" /><span id="text" class="btn--text"><font color="black"><b>Water Tap</b></font></span>',
+							icon: '<img alt="do this" src="data/stork1.svg" height="30" width="15" align="left" /><span id="text" class="btn--text"><font color="black"><b>Water Tap</b></font></span>',
 							stateName: 'remove-markers',
 							onClick: function(control) {
 								map.removeLayer(storkmap.markerClusterGroup1);
@@ -283,14 +282,14 @@
 						position: 'topright',
 						states: [{
 							stateName: 'add-markers',
-							icon: '<img alt="do this" src="data/stork2.svg" height="40" width="25" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Water Tank</b></font></span>',
+							icon: '<img alt="do this" src="data/stork2.svg" height="30" width="15" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Water Tank</b></font></span>',
 							title: 'add random markers',
 							onClick: function(control) {
 								map.addLayer(storkmap.markerClusterGroup2);
 								control.state('remove-markers');
 							}
 						}, {
-							icon: '<img alt="do this" src="data/stork2.svg" height="40" width="25" align="left" /><span id="text" class="btn--text"><font color="black"><b>Water Tank</b></font></span>',
+							icon: '<img alt="do this" src="data/stork2.svg" height="30" width="15" align="left" /><span id="text" class="btn--text"><font color="black"><b>Water Tank</b></font></span>',
 							stateName: 'remove-markers',
 							onClick: function(control) {
 								map.removeLayer(storkmap.markerClusterGroup2);
@@ -303,14 +302,14 @@
 						position: 'topright',
 						states: [{
 							stateName: 'add-markers',
-							icon: '<img alt="do this" src="data/stork3.svg" height="40" width="25" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Protected Spring</b></font></span>',
+							icon: '<img alt="do this" src="data/stork3.svg" height="30" width="15" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Protected Spring</b></font></span>',
 							title: 'add random markers',
 							onClick: function(control) {
 								map.addLayer(storkmap.markerClusterGroup3);
 								control.state('remove-markers');
 							}
 						}, {
-							icon: '<img alt="do this" src="data/stork3.svg" height="40" width="25" align="left" /><span id="text" class="btn--text"><font color="black"><b>Protected Spring</b></font></span>',
+							icon: '<img alt="do this" src="data/stork3.svg" height="30" width="15" align="left" /><span id="text" class="btn--text"><font color="black"><b>Protected Spring</b></font></span>',
 							stateName: 'remove-markers',
 							onClick: function(control) {
 								map.removeLayer(storkmap.markerClusterGroup3);
@@ -323,14 +322,14 @@
 						position: 'topright',
 						states: [{
 							stateName: 'add-markers',
-							icon: '<img alt="do this" src="data/stork5.svg" height="40" width="25" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Rain Water</b></font></span>',
+							icon: '<img alt="do this" src="data/stork5.svg" height="30" width="15" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Rain Water</b></font></span>',
 							title: 'add random markers',
 							onClick: function(control) {
 								map.addLayer(storkmap.markerClusterGroup5);
 								control.state('remove-markers');
 							}
 						}, {
-							icon: '<img alt="do this" src="data/stork5.svg" height="40" width="25" align="left" /><span id="text" class="btn--text"><font color="black"><b>Rain Water</b></font></span>',
+							icon: '<img alt="do this" src="data/stork5.svg" height="30" width="15" align="left" /><span id="text" class="btn--text"><font color="black"><b>Rain Water</b></font></span>',
 							stateName: 'remove-markers',
 							onClick: function(control) {
 								map.removeLayer(storkmap.markerClusterGroup5);
@@ -343,14 +342,14 @@
 						position: 'topright',
 						states: [{
 							stateName: 'add-markers',
-							icon: '<img alt="do this" src="data/stork6.svg" height="40" width="25" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Well</b></font></span>',
+							icon: '<img alt="do this" src="data/stork6.svg" height="30" width="15" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Well</b></font></span>',
 							title: 'add random markers',
 							onClick: function(control) {
 								map.addLayer(storkmap.markerClusterGroup6);
 								control.state('remove-markers');
 							}
 						}, {
-							icon: '<img alt="do this" src="data/stork6.svg" height="40" width="25" align="left" /><span id="text" class="btn--text"><font color="black"><b>Well</b></font></span>',
+							icon: '<img alt="do this" src="data/stork6.svg" height="30" width="15" align="left" /><span id="text" class="btn--text"><font color="black"><b>Well</b></font></span>',
 							stateName: 'remove-markers',
 							onClick: function(control) {
 								map.removeLayer(storkmap.markerClusterGroup6);
@@ -363,14 +362,14 @@
 						position: 'topright',
 						states: [{
 							stateName: 'add-markers',
-							icon: '<img alt="do this" src="data/stork11.svg" height="40" width="25" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Other</b></font></span>',
+							icon: '<img alt="do this" src="data/stork11.svg" height="30" width="15" align="left" style="opacity:0.2 "/><span id="text" class="btn--text"><font color="black"><b>Other</b></font></span>',
 							title: 'add random markers',
 							onClick: function(control) {
 								map.addLayer(storkmap.markerClusterGroup11);
 								control.state('remove-markers');
 							}
 						}, {
-							icon: '<img alt="do this" src="data/stork11.svg" height="40" width="25" align="left" /><span id="text" class="btn--text"><font color="black"><b>Other</b></font></span>',
+							icon: '<img alt="do this" src="data/stork11.svg" height="30" width="15" align="left" /><span id="text" class="btn--text"><font color="black"><b>Other</b></font></span>',
 							stateName: 'remove-markers',
 							onClick: function(control) {
 								map.removeLayer(storkmap.markerClusterGroup11);
@@ -407,7 +406,7 @@
 				.attr("padding-top", "2px");
 				imageDiv.append('img').attr("src", "data/hot-attribution.png")
 				.attr("align", "center")
-				.attr("width", "200em");
+				.attr("width", "200px");
 
 				map.setView([2.955, 31.122], 10);
 
@@ -417,17 +416,6 @@
 				map.addControl(rightSidebar);
 
 				rightSidebar.toggle();
-
-				var righthelpButton = new L.Control.Button(L.DomUtil.get('righthelpbutton'), { toggleButton: 'active' });
-				righthelpButton.addTo(map);
-				righthelpButton.on('click', function () {
-					if (righthelpButton.isToggled()) {
-						rightSidebar.show();
-					} else {
-						rightSidebar.hide();
-					}
-				});
-
 
 			};
 
